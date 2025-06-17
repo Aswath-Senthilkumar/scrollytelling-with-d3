@@ -49,7 +49,7 @@
 
   try {
     svg = container.append("svg").attr("width", width).attr("height", height);
-    const data = await loadCSVData("data/county_fast_food_data.csv");
+    const data = await loadCSVData("/Data/county_fast_food_data.csv");
     processedDataByYear = processCSVDataByYear(data);
     years = Object.keys(processedDataByYear)
       .map(Number)
