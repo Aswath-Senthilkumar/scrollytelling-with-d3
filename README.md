@@ -1,88 +1,130 @@
-# What's Cooking? The Fast-Food Shift in America's Diet
+# Scrollytelling with D3.js
 
-An interactive, storytelling-based data visualization dashboard exploring the historical and geographic expansion of fast-food chains across the United States, their influence on American eating habits, and broader public health implications.
+An interactive data visualization project that tells the story of fast food industry growth and trends through engaging scrollytelling techniques. Built with D3.js and modern web technologies.
 
-## Project Overview
+## Features
 
-This project combines compelling storytelling with robust data analytics to engage users in understanding the evolution of America's fast-food landscape. Using a scroll-based narrative format, we guide viewers through multiple interactive visualizations that reveal patterns in fast-food consumption, geographic distribution, and changes over time.
+- 10 interactive visualizations that unfold as you scroll
+- Responsive design that works on desktop and mobile devices
+- Smooth animations and transitions
+- Interactive tooltips and hover effects
+- Data-driven storytelling about the fast food industry
 
-Key aspects explored include:
+## Visualizations
 
-- Geographic distribution of fast-food chains across different states
-- Historical expansion patterns of major chains from 1990 to present
-- Relative dominance of chains based on revenue and number of locations
-- Regional preferences and popular chains by state
-- Nutritional content analysis of popular menu items
-- The rise of food delivery services and their impact
-
-## Structure
-
-The project is built as an immersive scrollytelling experience with multiple synchronized visualizations that reveal themselves as the user progresses through the narrative:
-
-1. **Fast Food Density Map (Choropleth)** - Interactive time-series visualization showing the density of fast food restaurants across US counties from 1990 to present, with animation controls.
-
-2. **Statewise Popularity Map (Hexagonal Grid)** - Shows the most searched and popular fast food chains by state in a visually engaging hexagonal layout.
-
-3. **Delivery-App Drill-Down (Zoomable Sunburst)** - Visualizes the growth of food delivery apps over time with user ratings and market share.
-
-4. **Revenue and Location Comparison** - Compares the top fast food chains by revenue and number of locations.
-
-5. **Nutritional Content Analysis** - Visualizes the nutritional content of popular menu items across different chains.
-
-6. **Interactive Bowl Builder** - Allows users to construct virtual meals and see nutritional impact with animated nutrient spikes.
-
-7. **Regional Preference Map** - Shows geographic preferences for different types of fast food.
-
-8. **Historical Timeline** - Tracks the expansion of major chains over decades.
-
-9. **Supply Chain Visualization** - Maps the complex supply chains behind fast food production.
-
-10. **Health Impact Dashboard** - Correlates fast food density with public health metrics.
-
-## Interactive Features
-
-The visualization incorporates numerous interactive elements to enhance user engagement:
-
-- **Time Controls** - Slider and play/pause/replay buttons for time-based animations
-- **Tooltips** - Detailed information on hover for all data points
-- **Zooming and Panning** - Drill down into specific geographic regions
-- **Filtering Controls** - Isolate specific chains or time periods
-- **Modal Windows** - Detailed information and micro-visualizations
-- **Animated Transitions** - Smooth state changes between visualization updates
+1. **Fast Food Industry Overview** - Introduction to the industry
+2. **Revenue Growth Timeline** - Historical revenue trends
+3. **Chain Growth Timeline** - Growth of major fast food chains
+4. **Sales Progression** - Sales trends over time
+5. **Location Distribution** - Geographic spread of chains
+6. **Food Expenditure Trends** - Home vs. Away from Home spending
+7. **State-wise Popularity** - Popular chains by state
+8. **Nutritional Analysis** - Health impact visualization
+9. **Consumer Behavior** - Spending patterns and preferences
+10. **Future Projections** - Industry outlook
 
 ## Technologies Used
 
-- **D3.js** - For data visualization and interactive graphics
-- **Scrollama** - For scroll-based interactions and triggers
-- **SVG** - For vector graphics and animations
-- **CSS3** - For styling and transitions
-- **HTML5** - For structure and semantics
-- **JavaScript (ES6+)** - For functionality and interactivity
+- D3.js for data visualization
+- Vite for build tooling
+- Modern JavaScript (ES6+)
+- HTML5 & CSS3
+- Scrollama.js for scroll-based animations
 
-## Visual Design
+## Getting Started
 
-The project employs a cohesive visual language with:
+### Prerequisites
 
-- A consistent color palette focusing on red tones that complement the fast food theme
-- Clear visual hierarchy and typography for optimal readability
-- Progressive color scales for data representation
-- Responsive design that works across different device sizes
-- Thoughtful use of animation to highlight key insights
+- Node.js (v14 or higher)
+- npm or yarn
 
-## Setup Instructions
+### Installation
 
-1. Clone the repository
-2. Open `index.html` in a web browser
-3. Scroll to explore the visualizations
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Aswath-Senthilkumar/scrollytelling-with-d3.git
+   cd scrollytelling-with-d3
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+### Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Project Structure
+
+```
+scrollytelling-with-d3/
+├── public/
+│   ├── js/
+│   │   ├── chart1.js
+│   │   ├── chart2.js
+│   │   └── ...
+│   ├── src/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   └── main/
+│   │       └── main.js
+│   └── index.html
+├── Data/
+│   ├── datasets/
+│   ├── images/
+│   └── logos/
+├── package.json
+├── vite.config.js
+└── README.md
+```
 
 ## Data Sources
 
-Mentioned in the Project Report
+The project uses various data sources including:
 
-## Contributors
+- Fast food chain growth data
+- Revenue and sales statistics
+- Geographic distribution data
+- Consumer spending patterns
+- Nutritional information
 
-- Aswath Senthilkumar - asenth25@asu.edu
-- Lingavasan Suresh Kumar - lsuresh4@asu.edu
-- Jai Keerthana Parthasarathy - jpartha2@asu.edu
-- Shiva Ganapathy Ramamoorthy - sramamo@asu.edu
-- Varun Ayyappan - vayyapp@asu.edu
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- D3.js community for their excellent documentation and examples
+- Scrollama.js for the scroll-based animation framework
+- All data sources that made this visualization possible
+
+## Contact
+
+Aswath Senthilkumar - [GitHub](https://github.com/Aswath-Senthilkumar)
+
+Project Link: [https://github.com/Aswath-Senthilkumar/scrollytelling-with-d3](https://github.com/Aswath-Senthilkumar/scrollytelling-with-d3)
