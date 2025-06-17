@@ -321,7 +321,7 @@
   }
 
   try {
-    const response = await fetch("data/cleaned_actual.csv");
+    const response = await fetch("/Data/cleaned_actual.csv");
     const csvText = await response.text();
 
     data = d3

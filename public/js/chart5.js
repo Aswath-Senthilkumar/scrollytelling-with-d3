@@ -23,8 +23,8 @@
 
   try {
     const [yearData, appData] = await Promise.all([
-      d3.csv("data/number_of_users_over_the_years.csv"),
-      d3.csv("data/food_delivery_apps_clean.csv"),
+      d3.csv("/Data/number_of_users_over_the_years.csv"),
+      d3.csv("/Data/food_delivery_apps_clean.csv"),
     ]);
 
     const yearMap = new Map();

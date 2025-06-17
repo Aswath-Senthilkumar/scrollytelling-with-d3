@@ -49,7 +49,7 @@
       .append("g")
       .attr("transform", `translate(${margin.left + 50},${margin.top + 100})`);
 
-    lineData = await d3.csv("data/num_locations.csv");
+    lineData = await d3.csv("/Data/num_locations.csv");
 
     lineData.forEach((d) => {
       d.date = d3.timeParse("%Y")(d.year);

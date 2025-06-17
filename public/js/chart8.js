@@ -150,7 +150,7 @@
 
     Promise.all(
       years.map((y) =>
-        d3.csv(`data/state_final/${y}_updated.csv`, (row) => {
+        d3.csv(`/Data/state_final/${y}_updated.csv`, (row) => {
           const occ = row.OCC_TITLE.trim().toLowerCase();
           const st = row.ST;
           if (!st) return null;

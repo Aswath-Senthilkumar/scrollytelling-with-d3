@@ -134,7 +134,7 @@
     const lineDuration = 3000;
 
     try {
-      const response = await fetch("data/nominal_expenditures.numbers");
+      const response = await fetch("/Data/nominal_expenditures.numbers");
       const buffer = await response.arrayBuffer();
 
       const wb = XLSX.read(new Uint8Array(buffer), { type: "array" });

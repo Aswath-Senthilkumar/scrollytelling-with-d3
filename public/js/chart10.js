@@ -228,7 +228,7 @@ function createChart10() {
       "Select age range and gender to see recommended daily nutrition values"
     );
 
-  d3.csv("./Data/ideal_nutritional_intake.csv")
+  d3.csv("/Data/ideal_nutritional_intake.csv")
     .then((raw) => {
       const parseNum = (s) => {
         const v = parseFloat(s);
