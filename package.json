@@ -1,0 +1,16 @@
+{
+  "name": "scrollytelling-with-d3",
+  "version": "1.0.0",
+  "description": "A scrollytelling visualization project using D3.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "d3": "^7.8.5"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+} 
